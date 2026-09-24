@@ -1,0 +1,7 @@
+# Apache: nur bot.php ist von außen erreichbar
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+<FilesMatch "^(bootstrap|setup-webhook)\.php$">
+    Require all denied
+</FilesMatch>
